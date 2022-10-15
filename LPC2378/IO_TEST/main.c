@@ -7,12 +7,14 @@ int main(){
 PINSEL0=0x00;
 IODIR0=0x000000FF;
 	while(1){
-if((IOPIN0 & 0x00000100)==0x00000100){
+if(IOPIN0<<9){
 IOSET0=0x000000FF;
 
 }	
+else{
 IOCLR0=0x000000FF;
 }
+	}
 
 }
 
