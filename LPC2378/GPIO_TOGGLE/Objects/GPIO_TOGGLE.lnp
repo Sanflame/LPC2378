@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\lpc2300.o"
+".\objects\main.o"
+--strict --scatter ".\Objects\GPIO_TOGGLE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\GPIO_TOGGLE.map" -o .\Objects\GPIO_TOGGLE.axf
