@@ -16,7 +16,7 @@ IOCLR0=0x000000FF;								//CLEAR port0   0x000000FF (set as low) , from pin 0 t
 delay();
 
 }
-return 0;
+return 0;													//return
 }
 void delay(){
 																			// customise as per requirements
