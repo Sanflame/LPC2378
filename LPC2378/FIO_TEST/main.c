@@ -4,19 +4,20 @@
 
 
 int main(){
-	PINSEL0=0x000000ff;
-	FIO0DIR0=0x00000ff;
+	SCS=(SCS & 0xfffffffe)|0x1;
+	PINSEL0=0x0;
+	FIO0DIR=0x00000ff;
 while(1){
 
-if(FIO0PIN0 & (1<<8)){
+if(FIO0PIN & (1<<8)){
 
-FIO0SET0=0x000000ff;
+FIO0SET=0x000000ff;
 
 
 }
 else{
 
-FIO0CLR0=0x000000ff;
+FIO0CLR=0x000000ff;
 
 }
 
